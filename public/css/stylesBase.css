@@ -1,0 +1,247 @@
+body {
+margin: 0;
+padding: 0;
+min-width: 900px;
+background: radial-gradient(circle, #f7e9d1, rgba(255, 204, 102, 0.425));
+}
+
+body.order {
+display: flex;
+flex-direction: column;
+min-height: 100vh;
+}
+
+main.content {
+flex: 1;
+}
+.error {
+color: #ff0000;
+background-color: #ffe6e6;
+border: 1px solid #ff0000;
+padding: 10px;
+border-radius: 5px;
+margin-top: 5px;
+font-size: 14px; /* Tamaño de fuente ajustado para mejor visibilidad */
+}
+.input-error {
+border-color: red;
+}
+
+/* barra de navegacion */
+.logoCris {
+width: 150px;
+height: auto;
+margin-right: 20px;
+}
+
+.logoUser {
+width: 30px;
+margin-right: 20px;
+margin-left: 20px;
+margin-bottom: 5px;
+margin-top: 5px;
+}
+a:hover {
+cursor: pointer; /* Cambia el cursor al pasar sobre el icono */
+}
+.tooltip {
+visibility: hidden;
+width: auto;
+background-color: #000;
+color: #fff;
+text-align: center;
+border-radius: 6px;
+padding: 5px 10px;
+position: absolute;
+z-index: 1;
+bottom: 100%;
+left: 50%;
+transform: translateX(-50%);
+opacity: 0;
+transition: opacity 0.3s;
+}
+.user-icon-container:hover .tooltip {
+visibility: visible;
+opacity: 1;
+}
+/* Estilos del menú */
+.navbar {
+overflow: hidden;
+background: linear-gradient(
+135deg,
+rgba(255, 221, 153, 0.9),
+rgba(255, 204, 102, 0.9)
+);
+position: fixed;
+/* Cambiado de absolute a fixed para que la barra permanezca fija en la parte superior */
+text-align: center;
+padding: 10px 0;
+width: 100%;
+top: 0;
+left: 0;
+z-index: 100;
+transition: background-color 0.3s ease;
+display: flex;
+justify-content: space-between;
+align-items: center;
+box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.1);
+/* Agrega un efecto de sombra para simular relieve */
+}
+.welcome-message {
+display: flex;
+align-items: center; /* Alinea verticalmente */
+margin-right: 20px; /* Espacio entre el mensaje y el icono */
+color: #000; /* Color del texto */
+font-weight: bold; /* Texto en negrita */
+font-size: 16px; /* Tamaño de fuente */
+}
+.navbar a {
+display: inline-block;
+color: #000000;
+text-align: center;
+text-decoration: none;
+font-size: 16px;
+font-weight: bold;
+}
+
+.navbar a:first-child {
+float: left;
+}
+
+.navbar a:hover {
+color: black;
+}
+
+.navbar a {
+display: inline-block;
+}
+
+@media screen and (max-width: 600px) {
+.navbar a:not(:first-child) {
+display: none;
+}
+
+.navbar a.icon {
+float: right;
+display: block;
+margin-right: 20px;
+}
+
+.navbar.responsive a.icon {
+position: absolute;
+right: 0;
+top: 0;
+}
+
+.navbar.responsive a {
+float: none;
+display: block;
+text-align: left;
+}
+
+.navbar.responsive {
+float: none;
+}
+
+.navbar.responsive {
+position: fixed;
+display: none;
+}
+
+.navbar.responsive {
+display: block;
+}
+}
+
+/* Estilos CSS */
+/* Estilos específicos para el footer */
+footer {
+min-width: 500px;
+background: linear-gradient(
+135deg,
+rgba(255, 221, 153, 0.9),
+rgba(255, 204, 102, 0.9)
+);
+color: #000;
+text-align: center;
+position: relative;
+z-index: 100;
+width: 100%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+box-shadow: 4px -4px 6px rgba(0, 0, 0, 0.1);
+font-size: 12px;
+
+}
+
+footer a {
+display: inline-block;
+color: #000;
+text-decoration: none;
+font-weight: bold;
+}
+
+footer a:hover {
+color: black;
+}
+
+footer .icon {
+display: none;
+}
+
+footer .columna {
+width: calc(25% - 30px);
+/* Usamos calc para restar el espacio entre las columnas */
+padding: 0 15px;
+/* Añade espacio entre las columnas */
+box-sizing: border-box;
+/* Ajustar el modelo de caja */
+text-align: left;
+/* Alineamos el texto a la izquierda */
+}
+
+footer .columna:first-child ul li {
+font-size: 14px;
+/* Ajustamos el tamaño del texto en la primera columna */
+}
+
+footer ul {
+list-style-type: none;
+padding: 0;
+margin: 0;
+/* Eliminamos el margen */
+line-height: 1.5;
+/* Establecemos el interlineado */
+font-weight: bold;
+}
+
+footer ul li {
+margin-bottom: 10px;
+}
+
+footer ul li a {
+color: black;
+text-decoration: none;
+}
+footer div{
+margin-top: 10px;
+}
+
+/* Estilos para pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+footer .columna {
+width: calc(50% - 30px);
+/* Dos columnas en una fila en pantallas más pequeñas */
+}
+}
+.footer {
+    display: flex;
+    justify-content: space-between; /* Distribuye los elementos en dos columnas */
+}
+
+.columna {
+    flex: 1; /* Hace que las columnas tengan el mismo ancho */
+    padding: 0 15px; /* Agrega espacio entre las columnas */
+    box-sizing: border-box; /* Ajusta el tamaño de las columnas para incluir el relleno */
+}

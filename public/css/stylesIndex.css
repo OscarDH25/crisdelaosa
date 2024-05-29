@@ -1,0 +1,46 @@
+ /* cuerpo */
+ .cuerpoIndex {
+ background-image: url("../img/index.png");
+ background-position: top;
+ background-repeat: no-repeat;
+ background-size: contain;
+ height: calc(100vh - 80px);/* Resta la altura de la barra de navegación */
+ color: #fff;
+ text-align: center;
+ position: relative;
+ margin-top: 80px;
+
+ }
+
+ .contenido {
+ position: absolute;
+ bottom: 10px;
+ left: 50%;
+ transform: translateX(-50%);
+ color: white;
+ padding: 20px;
+ border-radius: 10px;
+ max-width: 80%;
+ }
+
+ .descripcion {
+ margin: 0;
+ font-weight: bold;
+ font-size: 18px;
+ line-height: 1.5;
+ color: #fff;
+ text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+ }
+
+ .cita {
+ margin-top: 20px;
+ font-style: italic;
+ font-size: 16px;
+ line-height: 1.3;
+ color: #fff;
+ text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+ }
+
+
+
+ 
