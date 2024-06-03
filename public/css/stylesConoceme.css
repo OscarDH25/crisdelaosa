@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-width: 900px; /* Establece el ancho mínimo de la página */
+    background: radial-gradient(circle, #f7e9d1, rgba(255, 204, 102, 0.425));
+    /* Degradado radial desde blanco en el centro hasta el color actual en los bordes */
+}
+
+.portadaConoceme {
+    background-image: url("../img/conoceme.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* Ajusta la imagen para que quepa completamente dentro del contenedor sin distorsionarse */
+    height: calc(100vh - 80px);
+    /* Resta la altura de la barra de navegación */
+    color: #fff;
+    text-align: center;
+    position: relative;
+    margin-top: 80px;
+    /* Ajusta el margen superior */
+    /* Añade un poco de espacio alrededor del contenido */
+}
+.contenido {
+    position: absolute;
+    font-weight: bold;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #ffffff; /* Color de texto blanco */
+    font-size: 18px;
+    border-radius: 10px;
+    max-width: 40%;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.descripcion {
+    margin: 0;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 1.5;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    -webkit-text-stroke: 0.2px rgba(0, 0, 0, 0.603);
+}
