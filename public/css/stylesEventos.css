@@ -10,9 +10,15 @@ text-align: center;
 .card-img {
 max-width: auto;
 height: 500px;
+margin-top: 40px;
+
 }
 .header {
 padding: 20px;
+}
+h1
+{
+    text-align: center;
 }
 .container {
 overflow-y: scroll;

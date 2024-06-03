@@ -172,7 +172,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     box-shadow: 4px -4px 6px rgba(0, 0, 0, 0.1);
-    font-size: 12px;
+    font-size: 14px;
     padding: 0 20px; /* Ajusta el padding en lugar del margin */
 }
 
@@ -198,13 +198,11 @@ footer .columna {
     /* Añade espacio entre las columnas */
     box-sizing: border-box;
     /* Ajustar el modelo de caja */
-    text-align: left;
     /* Alineamos el texto a la izquierda */
 }
+footer .columna:first-child{
+    text-align: left;
 
-footer .columna:first-child ul li {
-    font-size: 14px;
-    /* Ajustamos el tamaño del texto en la primera columna */
 }
 
 footer ul {
@@ -228,6 +226,16 @@ footer ul li a {
 
 footer div {
     margin-top: 10px;
+}
+.igIcon{
+    width: 40px;
+    height: auto;
+}
+/* Añadir estas líneas al final de tu CSS */
+.instagram-icon {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
 }
 
 /* Estilos para pantallas más pequeñas */

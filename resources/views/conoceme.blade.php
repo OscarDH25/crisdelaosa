@@ -3,7 +3,7 @@
 
     <head>
         <title>
-            CrisDeLaOsa - Login
+            CrisDeLaOsa - Conóceme
         </title>
         <link rel="stylesheet" href={{ asset('css/stylesBase.css') }}>
         <link rel="stylesheet" href={{ asset('css/stylesConoceme.css') }}>

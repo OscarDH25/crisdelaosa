@@ -9,8 +9,15 @@
 @endsection
 
 @section('content')
+{{-- <div class="container">
+    <h1 class="page-title">Eventos</h1>
+</div>
+<div class="container">
+    <p class="page-subtitle">Presentacón de eventos en los que ha participado de Cris de la Osa</p>
+</div> --}}
 <div class="container">
     <div class="row">
+        <h1 class="page-title">Media</h1>
         @foreach ($eventos as $evento)
             <div class="col-md-12 mb-3">
                 <div class="card">

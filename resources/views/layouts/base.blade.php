@@ -40,7 +40,18 @@
                 <li><a href="{{ route('politicaPrivacidad') }}">Politica de privacidad</a></li>
             </ul>
         </div>
-
+        <div class="columna">
+            <ul>
+                <li class="ig">
+                    <a  href="https://www.instagram.com/crisdelaosa?igsh=cGZweW9rbnI2dHd2">
+                        <img class="igIcon" src="img/iconoIG.png" alt="Instagram" title="Instagram CrisDeLaOsa">
+                    </a>
+                </li>
+                <li>
+                    Instagram Cris de la Osa
+                </li>
+            </ul>
+        </div>
         <div class="columna">
             <ul>
                 <li><a href="{{ route('politicaCookies') }}">Politica de cookies</a></li>
