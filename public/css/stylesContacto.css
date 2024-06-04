@@ -4,7 +4,7 @@ body {
 }
 .container {
     width: 80%; /* El ancho será el 100% del ancho de la página menos 40px (20px de margen a cada lado) */
-    margin: 75px auto; /* Margen superior e inferior de 20px y centrado horizontal */
+    margin: 120px auto; /* Margen superior e inferior de 20px y centrado horizontal */
     padding: 50px;
     background-color: #fff;
     border-radius: 10px;
