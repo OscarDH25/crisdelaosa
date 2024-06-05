@@ -38,11 +38,6 @@ class ViewController extends Controller
         return view('eventos', compact('eventos'));
     }
 
-    /*public function contacto()
-    {
-        return view('contacto');
-    }*/
-
     public function login()
     {
         return view('login');

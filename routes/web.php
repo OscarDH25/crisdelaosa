@@ -33,9 +33,9 @@ Route::get('salir', [LoginController::class, 'salir'])->name('salir');
 Route::get('auth/google', [GoogleController::class, 'signInwithGoogle']);
 Route::get('callback/google', [GoogleController::class, 'callbackToGoogle']);
 
-// Ruta para mostrar el formulario de contacto y procesar los datos
+//Ruta para mostrar el formulario de contacto y procesar los datos
 Route::get('/contacto', [ContactoController::class, 'show'])->name('contacto');
 Route::post('/contacto', [ContactoController::class, 'process'])->name('contacto.process');
 
-//pago
+//Pago
 Route::get('/subscribe/{plan_id}', [SubscriptionController::class, 'subscribe'])->name('subscribe');

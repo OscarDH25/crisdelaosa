@@ -5,6 +5,8 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Cookie;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\WelcomeMail;
 use App\Models\User;
 use Illuminate\Http\Request;
 
@@ -47,9 +49,12 @@ class LoginController extends Controller
         $datos['name'] = htmlentities($datos['name'], ENT_QUOTES, 'UTF-8');
         $datos['email'] = htmlentities($datos['email'], ENT_QUOTES, 'UTF-8');
 
-        $check = $this->create($datos);
+        $user = $this->create($datos);
 
-        return redirect('login')->with('message', 'Haz login');
+        // Enviar el correo electrónico
+        Mail::to($user->email)->send(new WelcomeMail($user->name));
+
+        return redirect('login')->with('message', 'Registro exitoso. Por favor, inicia sesión.');
     }
 
     public function create(array $datos)

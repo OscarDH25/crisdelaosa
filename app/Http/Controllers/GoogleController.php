@@ -21,7 +21,7 @@ class GoogleController extends Controller
         try {
             $user = Socialite::driver('google')->user();
             $finduser = User::where('gauth_id', $user->id)->first();
-            
+
             if ($finduser) {
                 Auth::login($finduser);
             } else {
@@ -38,7 +38,7 @@ class GoogleController extends Controller
             // Guardar en cookies
             $nombre = $user->name;
             $correo = $user->email;
-            Cookie::queue('usuario_nombre', $nombre, 60); // La cookie caduca en 60 minutos
+            Cookie::queue('usuario_nombre', $nombre, 60);
             Cookie::queue('usuario_correo', $correo, 60);
 
             return redirect('/index');
